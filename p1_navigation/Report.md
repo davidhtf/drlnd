@@ -1,6 +1,6 @@
 # Udacity DRLND - Project 1: Navigation
 
-### learning Algorithm
+### Learning Algorithm
 
 
 ### Plot Rewards
