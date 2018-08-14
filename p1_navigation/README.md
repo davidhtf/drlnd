@@ -4,7 +4,7 @@
 
 # Udacity DRLND - Project 1: Navigation
 
-The following is built upon the original README from the [Udacity DRLMD](https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation)
+The following is built upon the original README from the [Udacity DRLND](https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation)
 
 ### Project Details
 
