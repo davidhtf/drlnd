@@ -2,7 +2,7 @@
 
 ### Project Details
 
-For this project, you will train an agent to navigate (and collect bananas!) in a large, square world.  
+In this project, we are asked to train an agent to play BananaCollectors (which is derived from the [Unity ML-Agents Toolkit] (https://github.com/Unity-Technologies/ml-agents) 
 
 ![Trained Agent][image1]
 
