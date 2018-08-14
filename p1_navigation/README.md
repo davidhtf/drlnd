@@ -4,11 +4,11 @@
 
 # Udacity DRLND - Project 1: Navigation
 
-The following is modified from the original README.md form the [Udacity DRLMD](https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation)
+The following is built upon the original README from the [Udacity DRLMD](https://github.com/udacity/deep-reinforcement-learning/tree/master/p1_navigation)
 
 ### Project Details
 
-In this project, we are asked to train an agent to play BananaCollectors (which is derived from the [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents) 
+In this project, we are asked to train an agent to play BananaCollectors (derived from the [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents) 
 
 ![Trained Agent][image1]
 
@@ -24,7 +24,7 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 ### Getting Started
 
-The model whas been trained locally on a Dell XPS 15 9560 with GPU enabled under a Window (64-bit) operating system. Thus, the following steps and instrcuctions are specifically for Window (64-bit).
+My model has been trained locally on a Dell XPS 15 9560 with GPU enabled under a Window (64-bit) operating system. Thus, the following steps and instrcuctions are specifically for Window (64-bit).
 
 1. To set up the Python environment needed to for running the codes, follow the steps set out under **Dependencies** from [this link](https://github.com/davidhtf/drlnd)   
 
