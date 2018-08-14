@@ -26,20 +26,11 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 The model whas been trained locally on a Dell XPS 15 9560 with GPU enabled under a Window (64-bit) operating system. Thus, the following steps and instrcuctions are specifically for Window (64-bit).
 
-1. The Unity environment has been uploaded to this repository so there no need to download it if you have cloned this repository
+1. To set up the Python environment needed to for running the codes, follow the steps set out under **Dependencies** from this link: (https://github.com/davidhtf/drlnd)   
 
-2.
-
-1. The environment from one of the links below.  You need only select the environment that matches your operating system:
-    - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
-    - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
-    - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
-    - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
-    
-
-
-2. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file. 
+2. The Unity environment has been uploaded to this repository so there is no need to download it if you have cloned this repository
 
 ### Instructions
 
-Follow the instructions in `Navigation.ipynb` to get started with training your own agent!  
+- To train an agent, follow the instructions set out in `train_dqn.ipynb`
+- To test an agent (i.e. see how a trained agent plays), follow the instructions set out in `test_dqn.ipynb`
