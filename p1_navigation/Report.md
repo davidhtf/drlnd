@@ -1,10 +1,8 @@
-
-***learning Algorithm
-
+###learning Algorithm
 
 
-***Plot Rewards
+###Plot Rewards
 
 
 
-***Ideas for Future Work
+###Ideas for Future Work
