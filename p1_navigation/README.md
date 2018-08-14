@@ -8,7 +8,7 @@ The following is modified from the original README.md form the [Udacity DRLMD](h
 
 ### Project Details
 
-In this project, we are asked to train an agent to play BananaCollectors (which is derived from the [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents)) 
+In this project, we are asked to train an agent to play BananaCollectors (which is derived from the [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents) 
 
 ![Trained Agent][image1]
 
@@ -26,7 +26,7 @@ The task is episodic, and in order to solve the environment, the agent must get 
 
 The model whas been trained locally on a Dell XPS 15 9560 with GPU enabled under a Window (64-bit) operating system. Thus, the following steps and instrcuctions are specifically for Window (64-bit).
 
-1. To set up the Python environment needed to for running the codes, follow the steps set out under **Dependencies** from [this link:](https://github.com/davidhtf/drlnd)   
+1. To set up the Python environment needed to for running the codes, follow the steps set out under **Dependencies** from [this link](https://github.com/davidhtf/drlnd)   
 
 2. The Unity environment has been uploaded to this repository so there is no need to download it if you have cloned this repository
 
