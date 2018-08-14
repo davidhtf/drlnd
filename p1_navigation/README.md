@@ -8,7 +8,7 @@ The following is built upon the original README from the [Udacity DRLND](https:/
 
 ### Project Details
 
-In this project, we are asked to train an agent to play BananaCollectors (derived from the [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents) 
+In this project, we are asked to train an agent to play BananaCollectors (derived from the [Unity ML-Agents Toolkit](https://github.com/Unity-Technologies/ml-agents)) 
 
 ![Trained Agent][image1]
 
