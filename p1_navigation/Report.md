@@ -41,6 +41,7 @@ Set forth below is a plot of rewards per epsiode showing that trained agaent is 
 
 ![Plot of Rewards][image1]
 
+
 ### Ideas for Future Work
 
 Set forth below is a histogram on what actions the trained agent has taken over the last 50 steps. 
