@@ -27,9 +27,9 @@ The hyper-parameters of the learning algorithm include:
 * Parameters concerning the neural network, which are:
   * Architecture of the neural network - in this case, the number of hidden layer and the number of node of each hidden layer
 
-For tuning the agent to solving the environment (i.e. achieving an average score of 13+ over the last 100 episodes) with min training episodes needed. I have tried a permutation of the hyper-parameters set out above.
+For tuning the agent to solving the environment (i.e. achieving an average reward of 13+ over the last 100 episodes) with min training episodes needed. I have tried a permutation of the hyper-parameters set out above.
 
-The best result I can obtain (solving the environemnt in 380 episodes) are achieve with the following setting:
+The best result I can obtain (solving the environemnt in 380 episodes) are achieved with the following setting:
 * Epsilon at start = 1.0 , epsilon decay rate = 0.99, min epsilon = 0.05
 * Replay buffer size = 1e5, minibatch size = 64, discount factor = 0.99, weight for soft update of target parameters = 1e-3, learning rate = 5e-4, update steps for learning of the network = 3
 * Number of hidden layer = 2,  number of node of each hidden layer = {fc1_units: 64, fc2_units: 32}
@@ -37,8 +37,16 @@ The best result I can obtain (solving the environemnt in 380 episodes) are achie
 
 ### Plot Rewards
 
+Set forth below is a plot of rewards per epsiode showing that trained agaent is able to receive an average reward (over 100 episodes) of at least 13.
+
 ![Plot of Rewards][image1]
 
 ### Ideas for Future Work
 
+Set forth below is a histogram on what actions the trained agent has taken over the last 50 steps. 
+
 ![Plot of Actions][image2]
+
+It seems for most of the time, the agent chooses to move forward (`0`), and occasionally chooses to turn left (`2`) or turn right (`3`). It has never taken the action move backward (`1`). This could be due to the fact that the current setup does not incorporate any temporal components into consideration (e.g. the agent doesn't remember it has move passed a nearby yellow banana, and thus will not move backward).
+
+Therefore, the optional challenge of learning from pixels (which allows for stacking up pixels by frame and thus takes temporal components into consideration) might be a good idea for future work.
