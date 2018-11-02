@@ -11,16 +11,18 @@ The learning algorithm for training an agent in this project is based on deep re
 The steps of the learning process can be summarize as follows: 
 * For each episode, repeat the following:
   * For each step, repeat the following: 
-    * After observing a state at time t, each agent takes action per current policy (we also clip the action such that abs(action) <= 1, but unlike in Project 2, with noise disabled)
+    * After observing its own state at time t, each agent takes action per current policy (we also clip the action such that abs(action) <= 1; but unlike in Project 2, we have disabled noise )
     * After taking action at time t, each agent observes its state and reward at t+1
-    * Agent then adds the "S, S_all, A, R, S', S'_all" tuple to memory where is to be shared by each agent; the dimension of each element of the tuple are as such:
+    * Agent then adds the "S, S_all, A, R, S', S'_all" tuple to memory which is shared by each agent; the dimension of each element of the tuple are as such:
+    
         * dim(s_states) = BATCH_SIZE x num_agents x state_size
         * dim(s_full_states) = BATCH_SIZE x 1 x (state_size * num_agents)
         * dim(s_actions) = BATCH_SIZE x num_agents x action_size
         * dim(s_rewards) = BATCH_SIZE x num_agents
         * dim(s_next_states) = BATCH_SIZE x num_agents x state_size
         * dim(s_full_next_states) = BATCH_SIZE x 1 x (state_size * num_agents)
-        * dim(s_dones) = BATCH_SIZE x num_agents              
+        * dim(s_dones) = BATCH_SIZE x num_agents
+        
     * At every `UPDATE_EVERY` steps, each agent then randomly select a batch of memory to update parameters of its value function and policy function as approximated by the neural networks as set out in `model.py` and as per the MADDPG algorithm (that is, the Critic is trained with obervations and actions of ALL agents)
     * For the neural networks' optimization, we use mean-square-error as the loss function; gradients of each parameter of the neural network are backpropagated; and weight of each parameters are updated as per `optim.Adam`
     * At every `UPDATE_EVERY steps`, for each agent, we also update the targets of the two functions by performing `soft_update`, which generate an average of target functions and local functions with hyper-parameter `TAU` as the weight
