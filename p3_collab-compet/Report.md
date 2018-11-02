@@ -6,7 +6,7 @@
 
 ### Learning Algorithm
 
-The learning algorithm for training an agent in this project is based on deep reinforcement learning - specifically it is built upon the MADDPG algorithm with two each DDPG agents sharing the same replay experience. The neural network architectures are set out in `model.py` and the agents' behavior are set out in `maddpg.py` and `ddpg_agent.py` (these are extensions from what have been developed for [Projec Two] (https://github.com/davidhtf/drlnd/tree/master/p2_continuous-control)
+The learning algorithm for training an agent in this project is based on deep reinforcement learning - specifically it is built upon the MADDPG algorithm with two each DDPG agents sharing the same replay experience. The neural network architectures are set out in `model.py` and the agents' behavior are set out in `maddpg.py` and `ddpg_agent.py` (these are extensions from what have been developed for [Projec Two](https://github.com/davidhtf/drlnd/tree/master/p2_continuous-control)
 
 The steps of the learning process can be summarize as follows: 
 * For each episode, repeat the following:
